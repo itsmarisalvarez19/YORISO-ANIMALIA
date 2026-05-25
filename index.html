@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yoriso</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#F8F7FC;
+color:#2D2A32;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+background:white;
+position:fixed;
+width:100%;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+color:#7C4DFF;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#2D2A32;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+background:linear-gradient(rgba(124,77,255,0.4), rgba(142,227,193,0.3)),
+url('https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#7C4DFF;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:2.5rem;
+color:#7C4DFF;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.requisitos{
+margin-top:60px;
+background:linear-gradient(135deg,#7C4DFF,#8EE3C1);
+padding:50px;
+border-radius:30px;
+color:white;
+}
+
+.requisitos ul{
+margin-top:20px;
+padding-left:20px;
+line-height:2;
+}
+
+.historias{
+background:#F2EEFF;
+}
+
+.testimonio{
+background:white;
+padding:30px;
+border-radius:20px;
+}
+
+.contacto{
+background:white;
+}
+
+footer{
+background:#2D2A32;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Yoriso</div>
+
+<nav>
+<a href="#adoptar">Adoptar</a>
+<a href="#historias">Historias</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Conectando corazones</h1>
+
+<p>
+Un hogar puede cambiar la vida de un animal para siempre.
+</p>
+
+<a href="#adoptar" class="btn">
+Adoptar ahora
+</a>
+
+</div>
+
+</section>
+
+<section id="adoptar">
+
+<div class="section-title">
+<h2>Adopta una mascota</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+<h3>Gatos</h3>
+<p>
+Encuentra gatos amorosos esperando un nuevo hogar.
+</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+<h3>Perros</h3>
+<p>
+Perros rescatados listos para compartir su amor contigo.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="requisitos">
+
+<h3>Requisitos para adoptar</h3>
+
+<ul>
+<li>Ser mayor de 21 años</li>
+<li>Presentar identificación</li>
+<li>Tener espacio adecuado</li>
+<li>Compromiso de cuidado responsable</li>
+<li>Asistir a entrevista presencial</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="historias" class="historias">
+
+<div class="section-title">
+<h2>Historias felices</h2>
+</div>
+
+<div class="cards">
+
+<div class="testimonio">
+<h3>Luna encontró un hogar</h3>
+<p>
+Ahora vive rodeada de amor y cuidados.
+</p>
+</div>
+
+<div class="testimonio">
+<h3>Max volvió a confiar</h3>
+<p>
+Después del rescate encontró una nueva familia.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto" class="contacto">
+
+<div class="section-title">
+<h2>Contacto</h2>
+</div>
+
+<p style="text-align:center; line-height:2;">
+Centro Yoriso <br>
+Zona 14, Ciudad de Guatemala <br>
+contacto@yoriso.org
+</p>
+
+</section>
+
+<footer>
+© 2026 Yoriso — Centro de adopción
+</footer>
+
+</body>
+</html>
